@@ -1,0 +1,40 @@
+body {
+  background-color: #f4f4f4;
+  padding-left: 10px;
+}
+.title {
+  color: darkblue;
+  font-family: Verdana;
+  font-size: 2em;
+  text-transform: uppercase;
+  text-decoration: underline;
+  text-align: left;
+}
+.h2 {
+  color: cadetblue;
+  font-family: Verdana;
+  font-size: 1.5em;
+  text-transform: uppercase;
+}
+p {
+  font-family: verdana;
+  font-size: 1em;
+}
+
+p.title {
+  font-size: large;
+  font-weight: bold;
+}
+
+#intro {
+  text-align: justify;
+}
+
+img {
+  width: 200px;
+  height: 200px;
+  border-radius: 100px;
+  float: left;
+  margin: 0 auto;
+  display: block;
+}
