@@ -6,26 +6,66 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="keywords" content="HTML, CSS" />
-    <meta name="description" content="A fox" />
+    <meta name="description" content="Personal website of Anh Tran" />
     <link
       rel="icon"
       href="https://i.pinimg.com/736x/bc/75/06/bc7506ba497f3aad78f8c0381c971cb6.jpg"
     />
     <link rel="stylesheet" href="style.css" />
+    <script src="app.js"></script>
   </head>
 
   <body>
-    <h1 class="title">Hello</h1>
-    <h2 class="h2">About me</h2>
-    <div id="intro">
-      <img src="images/fox.jpg" alt="A drawing of a fox" />
-      <p>My name is Anh</p>
-      <p>I am a third-year SE student</p>
-    </div>
-    <div style="clear: both"></div>
-    <h2 class="h2">My contacts</h2>
-    <div id="contacts">
-      <p>My <a href="https://github.com/anhKip" target="_blank">Github</a></p>
+    <div class="main">
+      <h1 class="title">Hello</h1>
+      <h2 class="h2">About me</h2>
+      <div class="intro-box">
+        <img
+          class="circle-image"
+          src="images/fox.jpg"
+          alt="A drawing of a fox"
+        />
+        <p>My name is Anh</p>
+        <p>I am a third-year SE student</p>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. At
+          dignissimos provident laboriosam dolor saepe iure ullam, nobis autem
+          necessitatibus quibusdam molestias facilis aut unde temporibus nisi
+          quis ratione nostrum modi?
+        </p>
+      </div>
+
+      <div style="clear: both"></div>
+
+      <h2 class="h2">My contacts</h2>
+
+      <div id="contacts">
+        <table class="contact-table">
+          <thead>
+            <th>Platform</th>
+            <th>Link</th>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Github</td>
+              <td>
+                <a href="https://github.com/anhKip" target="_blank"
+                  >Link to github</a
+                >
+              </td>
+            </tr>
+            <tr>
+              <td>Email</td>
+              <td><a href="mailto: anhtm621@gmail.com">Email me</a></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div id="time">
+        <button id="btnClock" onclick="clock()">What time is it?</button>
+        <p id="clock"></p>
+      </div>
     </div>
   </body>
 </html>

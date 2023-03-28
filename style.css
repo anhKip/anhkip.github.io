@@ -1,14 +1,46 @@
+.main {
+  margin: auto;
+  width: 60%;
+}
+
 body {
   background-color: #f4f4f4;
   padding-left: 10px;
 }
+
+img.circle-image {
+  width: 200px;
+  height: 200px;
+  border-radius: 100px;
+  float: left;
+  margin: 0 auto;
+  display: block;
+}
+
+@media screen and (max-width: 800px) {
+  .main {
+    margin: auto;
+    width: 90%;
+  }
+  img.circle-image {
+    width: 100px;
+    height: 100px;
+    border-radius: 50px;
+    float: left;
+    margin: 0 auto;
+    display: block;
+  }
+}
+
 .title {
   color: darkblue;
   font-family: Verdana;
   font-size: 2em;
   text-transform: uppercase;
   text-decoration: underline;
-  text-align: left;
+  text-align: center;
+  line-height: 100px;
+  height: 100px;
 }
 .h2 {
   color: cadetblue;
@@ -21,20 +53,40 @@ p {
   font-size: 1em;
 }
 
+button {
+  font-family: verdana;
+  font-size: 1em;
+  margin-top: 25px;
+}
+
 p.title {
   font-size: large;
   font-weight: bold;
 }
 
-#intro {
+.intro-box {
   text-align: justify;
+  border: 25px solid gainsboro;
+  background-color: white;
+  margin: 25px;
+  padding: 10px;
 }
 
-img {
-  width: 200px;
-  height: 200px;
-  border-radius: 100px;
-  float: left;
-  margin: 0 auto;
-  display: block;
+table.contact-table {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  border-collapse: collapse;
+}
+
+table,
+th,
+tr,
+td {
+  border: 1px solid gray;
+  padding: 10px;
+}
+
+div.box {
+  width: 100px;
+  height: 100px;
+  background-color: aquamarine;
 }
